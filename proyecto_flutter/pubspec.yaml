@@ -1,0 +1,90 @@
+name: sota_caballo_rey
+description: "A new Flutter project."
+
+publish_to: 'none' # No publicar en pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1 # Para las fuentes de google
+
+  # Paquete para uso de web sockets
+  web_socket_channel: ^2.4.0
+
+  # Paquete para seleccionar imágenes
+  image_picker: ^1.0.0
+
+  # Paquete para cargar el video de la pantalla de carga.
+  video_player: ^2.5.5
+
+  # Paquete para almacenar tokens de forma segura.
+  flutter_secure_storage: ^9.2.4
+
+  # Paquete para realizar peticiones HTTP
+  http: ^1.3.0
+
+  # Paquete para añadir carrusel de imagenes
+  carousel_slider: ^5.0.0
+
+  # Paquete para transiciones más suaves.
+  smooth_page_indicator: ^1.2.1
+
+  # Paquete para añadir efectos de sonido
+  audioplayers: ^6.4.0
+
+  # Paquete para guardar las preferencias del usuario
+  shared_preferences: ^2.5.2
+
+  # Paquete para las notificaciones
+  flutter_local_notifications: ^19.1.0
+
+  # Paquete para extraer la hora en friends chat.
+  intl: ^0.17.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  mockito: ^5.0.17
+
+  # Lints recomendadas para seguir el estilo de flutter.
+  flutter_lints: ^5.0.0
+
+  flutter_launcher_icons: ^0.10.0
+  
+
+
+
+flutter:
+
+  # Para poder usar todo lo proporcionado por material design
+  uses-material-design: true
+
+  # Ruta a la carpeta con las imagenes a usar
+  assets:
+    - assets/images/
+    - assets/images/decks/base/
+    - assets/images/decks/poker/
+    - assets/images/decks/paint/
+    - assets/images/ranks/
+    - assets/images/tapetes/
+    - assets/json/config.json
+    - assets/sounds/
+    
+  # Fuentes usadas
+  fonts:
+    - family: tituloApp
+      fonts:
+        - asset: assets/fonts/GlossypersonaluseRegular-eZL93.otf
+ 
+flutter_icons:
+  android: true            # genera iconos para Android
+  ios: false               
+  image_path: "assets/icon/app_icon.png"
